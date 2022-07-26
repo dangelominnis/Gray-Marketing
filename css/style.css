@@ -54,17 +54,17 @@ body {
 }
 
 .und {
-    width: 8rem;
-    height: 2rem;
-    background-color: var(--color-purple);
-    border-radius: 2px;
+    width: 16rem;
+    height: 1.5rem;
+    background: var(--color-purple);
+    border-radius: 8px;
 }
 
 /* ******************************************************** START OF HEADER SECTION ************************************************************ */
 /* Header Section */
 .header {
     background: url(../img/pexels-morthy-jameson-9588219.jpg);
-    height: 100vh;
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -213,7 +213,8 @@ body {
     height: var(--bar-height);
     border-bottom: .5px solid lightgray;
     transition: background 0.15s;
-    background-image: url(../img/gray-bg-01.png);
+    /* background-image: url(../img/gray-bg-01.png); */
+    background: var(--color-white);
     box-sizing: border-box;
     background-size: cover;
     background-position: center;
@@ -279,7 +280,7 @@ body {
 }
 
 .nav__link {
-    color: var(--color-black);
+    color: var(--color-purple);
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 1.6;
@@ -336,11 +337,13 @@ body {
 /* __________________________________________________________________________________________________________________ */
 /* Services Section */
 .services {
-    background: url(../img/gray-bg-02.png);
+    background: url(../img/gray-bg-01.png);
+    /* background: var(--color-white); */
     padding: 12rem 8rem;
     box-sizing: border-box;
-    background-size: cover;
+    background-size: 1920px cover;
     background-position: center;
+    background-size: 100%;
     z-index: 4;
     position: relative;
 }
@@ -353,7 +356,7 @@ body {
     height: 100%;
     width: 100%;
     z-index: -1;
-    /* background: rgba(0, 0, 0, 0.8);  */
+    background: rgba(255, 255, 255, 0.5); 
 }
 
 .services h2 {
@@ -376,28 +379,33 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 6rem;
+    padding: 2rem;
 }
 
 .services-item {
-    width: 25rem;
-    height: 20rem;
+    width: 30rem;
+    height: 30rem;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: left;
-    text-align: left;
-    margin: 0rem 4rem 12rem 4rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0rem 6rem 12rem 6rem;
+    box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.15);
+    background: var(--color-white);
+    padding: 2rem;
+    border-radius: 24px;
+    transition: .5s ease-in-out all;
+    border-top: 5px solid var(--color-purple);
 }
 
-.services-item a {
-    opacity: 1;
-    text-decoration: none;
-    cursor: pointer;
-    transition: .3s ease;
+.services-item:hover {
+    transform: scale(1.1);
 }
 
-.services-item a:hover {
+.services-info .btn-purple-transparent {
+    padding: .75rem 1.75rem;
+    font-size: 1.4rem;
 }
 
 .services-item:nth-child(7) {
@@ -420,33 +428,13 @@ body {
     margin-bottom: 2rem;
 }
 
-.services-title a {
-    color: rgba(0, 0, 0, 0.3);
-    font-size: 2.5rem;
-    font-weight: 800;
-    line-height: 1.3;
-    /* text-transform: uppercase; */
-    text-decoration: none;
-    cursor: pointer;
-    padding-bottom: 1rem;
-}
-
-.services-title a:hover {
-    color: var(--color-dark-grey);
-    border-bottom: 1px solid var(--color-purple);
-}
-
-.services-title a span {
-    font-weight: 500;
-}
-
 .services-title h3 {
     color: var(--color-dark-grey);
     font-size: 2.5rem;
     font-weight: 800;
     line-height: 1.3;
     text-align: center;
-    /* text-transform: uppercase; */
+    margin-bottom: 1rem;
 }
 
 .services-title h3 span {
@@ -469,12 +457,8 @@ body {
     
 }
 
-/* .services-icon img:hover {
-    display: none;
-} */
-
 .services-info {
-    
+    margin: 1rem 0 3rem;
 }
 
 .services-info p {
@@ -483,12 +467,6 @@ body {
     font-weight: 400;
     line-height: 1.6;
     text-align: center;
-    /* visibility: hidden; */
-}
-
-.services-info p:hover {
-    /* visibility: visible; */
-    opacity: 1;
 }
 
 .services-button {
@@ -500,7 +478,8 @@ body {
 
 /* Pricing Section */
 .pricing {
-    background: url(../img/gray-bg-02.png);
+    background: url(../img/gray-bg-01.png);
+    /* background: var(--color-white); */
     background-position: center;
     padding: 12rem 8rem 4rem 8rem;
     padding-top: var(--bar-height);
@@ -566,8 +545,8 @@ body {
     width: 28.5rem;
     height: auto;
     background-color: var(--color-white);
-    box-shadow: 0 .75rem .75rem rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
     margin: 0 1rem;
 }
 
@@ -587,8 +566,8 @@ body {
     /* background-color: rgb(248, 248, 248); */
     background-color: var(--color-purple);
     padding: 2rem 0;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
 }
 
 .pricing-title h3 {
@@ -770,7 +749,8 @@ body {
 
 /* Certifications Section */
 .certifications {
-    background: url(../img/gray-bg-02.png);
+    /* background: url(../img/gray-bg-02.png); */
+    background: var(--color-light-grey);
     padding: 6rem 2rem 4rem 2rem;
     box-sizing: border-box;
     background-size: cover;
@@ -924,7 +904,8 @@ body {
 
 /* Portfolio Section */
 .portfolio {
-    background: url(../img/gray-bg-03.png);
+    /* background: url(../img/gray-bg-03.png); */
+    background: var(--color-light-grey);
     padding: 12rem 8rem;
     box-sizing: border-box;
     background-size: cover;
@@ -1006,10 +987,11 @@ body {
 
 /* Reviews Section */
 .reviews {
-    background: url(../img/gray-bg-03.png);
+    background: url(../img/gray-bg-01.png);
+    /* background: var(--color-white); */
     padding: 12rem 8rem;
     box-sizing: border-box;
-    background-size: cover;
+    background-size: 1920px cover;
     background-position: center;
     z-index: 4;
     position: relative;
@@ -1211,10 +1193,11 @@ body {
 
 /* Directory Section */
 .directory {
-    background: url(../img/gray-bg-04.png);
+    background: url(../img/gray-bg-01.png);
+    /* background: var(--color-white); */
     padding: 12rem 8rem;
     box-sizing: border-box;
-    background-size: cover;
+    background-size: 1920px cover;
     background-position: center;
     z-index: 4;
     position: relative;
@@ -1431,7 +1414,7 @@ body {
 /* Footer Section */
 .footer {
     padding: 6rem 0;
-    background-color: var(--color-white);
+    background-color: var(--color-light-grey);
     display: flex;
     align-items: center;
     padding-top: var(--bar-height);
