@@ -337,7 +337,7 @@ body {
 /* __________________________________________________________________________________________________________________ */
 /* Services Section */
 .services {
-    background: url(../img/gray-bg-01.png);
+    background: url(../img/gray-bg-02.png);
     /* background: var(--color-white); */
     padding: 12rem 8rem;
     box-sizing: border-box;
@@ -356,7 +356,7 @@ body {
     height: 100%;
     width: 100%;
     z-index: -1;
-    background: rgba(255, 255, 255, 0.5); 
+    background: rgba(255, 255, 255, .7); 
 }
 
 .services h2 {
@@ -497,7 +497,7 @@ body {
     height: 100%;
     width: 100%;
     z-index: -1;
-    /* background: rgba(0, 0, 0, 0.8);  */
+    background: rgba(255, 255, 255, 0.7); 
 }
 
 .pricing h2 {
@@ -1008,7 +1008,7 @@ body {
     height: 100%;
     width: 100%;
     z-index: -1;
-    /* background: rgba(0, 0, 0, 0.8);  */
+    background: rgba(255, 255, 255, 0.7); 
 }
 
 .reviews h2 {
@@ -1211,7 +1211,7 @@ body {
     height: 100%;
     width: 100%;
     z-index: -1;
-    /* background: rgba(0, 0, 0, 0.8);  */
+    background: rgba(255, 255, 255, 0.7); 
 }
 
 .directory .und {
