@@ -2,15 +2,15 @@
 .btn-purple {
     background: var(--color-purple);
     color: var(--color-white);
-    font-weight: 700;
-    font-size: 1.25rem;
+    font-weight: 600;
+    font-size: 1.4rem;
     padding: 2rem 2.5rem;
     border-radius: 4px;
     cursor: pointer;
     transition: .3s ease;
     text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    /* text-transform: uppercase; */
+    /* letter-spacing: 1px; */
 }
 
 .btn-purple:hover {
@@ -22,15 +22,15 @@
 .btn-black {
   background: var(--color-black);
   color: var(--color-white);
-  font-weight: 700;
-  font-size: 1.25rem;
+  font-weight: 600;
+  font-size: 1.4rem;
   padding: 2rem 2.5rem;
   cursor: pointer;
   border-radius: 4px;
   transition: .3s ease;
   text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  /* text-transform: uppercase; */
+  /* letter-spacing: 1px; */
 }
 
 .btn-black:hover {
@@ -43,15 +43,15 @@
   background: transparent;
   color: var(--color-white);
   border: 2px solid var(--color-white);
-  font-weight: 700;
-  font-size: 1.25rem;
+  font-weight: 600;
+  font-size: 1.4rem;
   padding: 2rem 2.5rem;
   border-radius: 4px;
   cursor: pointer;
   transition: .5s ease all;
   text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  /* text-transform: uppercase; */
+  /* letter-spacing: 1px; */
 }
 
 .btn-white-transparent:hover {
@@ -63,15 +63,15 @@
   background: transparent;
   color: var(--color-black);
   border: 2px solid var(--color-black);
-  font-weight: 700;
-  font-size: 1.25rem;
+  font-weight: 600;
+  font-size: 1.4rem;
   border-radius: 4px;
   padding: 2rem 2.5rem;
   cursor: pointer;
   transition: .5s ease all;
   text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  /* text-transform: uppercase; */
+  /* letter-spacing: 1px; */
 }
 
 .btn-black-transparent:hover {
@@ -83,15 +83,15 @@
   background: transparent;
   color: var(--color-purple);
   border: 2px solid var(--color-purple);
-  font-weight: 700;
-  font-size: 1.25rem;
+  font-weight: 600;
+  font-size: 1.4rem;
   padding: 2rem 2.5rem;
   border-radius: 4px;
   cursor: pointer;
   transition: .5s ease all;
   text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  /* text-transform: uppercase; */
+  /* letter-spacing: 1px; */
 }
 
 .btn-purple-transparent:hover {
@@ -102,15 +102,15 @@
 .btn-login {
   background: transparent;
   color: var(--color-black);
-  font-weight: 700;
-  font-size: 1.25rem;
+  font-weight: 600;
+  font-size: 1.4rem;
   padding: 1rem;
   border-radius: 4px;
   cursor: pointer;
   transition: .5s ease all;
   text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  /* text-transform: uppercase; */
+  /* letter-spacing: 1px; */
 }
 
 .btn-login:hover {
