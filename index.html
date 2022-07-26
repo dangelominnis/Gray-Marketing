@@ -57,7 +57,7 @@
                     <img src="img/GRAY-logo-03.png" alt="">
                 </div>
                 <div class="header-button">
-                    <a href="#services" class="btn-black-transparent">Let's Get Started &#8594;</a>
+                    <a href="#services" class="btn-purple">Let's Get Started</a>
                 </div>
             </div>
         </div>
@@ -75,9 +75,7 @@
                 <a class="nav__link" href="#services">Services</a>
                 <a class="nav__link" href="#portfolio">Portfolio</a>
                 <a class="nav__link" href="#web">Careers</a>
-                <a class="btn-black-transparent" href="#">Start A Project</a>
-                <a class="btn-black" href="#">Sign Up</a>
-                <a href="#" class="btn-login">Login &#8594;</a>
+                <a class="btn-purple" href="#">Start A Project</a>
             </nav>
         </div>
     </div>
@@ -86,7 +84,7 @@
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const observer = new IntersectionObserver(entries => {
-                document.querySelector(".bar").classList.toggle("bar--bg", entries[0].intersectionRatio < 1)
+                document.querySelector(".bar").classList.toggle("bar--bg", entries[0].intersectionRatio < 0.9)
             }, {
                 threshold: 0.1
             });
@@ -126,7 +124,7 @@
                         <div class="services-icon">
                             <img src="img/gray-icon-01.png" alt="">
                         </div>
-                        <h3><span>01</span> Digital Advertising</h3>
+                        <h3><span></span> Digital Advertising</h3>
                     </div>
                     <div class="services-info">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias totam, corrupti adipisci tempore facilis quo temporibus unde iure quos eum!</p>
@@ -140,7 +138,7 @@
                         <div class="services-icon">
                             <img src="img/gray-icon-02.png" alt="">
                         </div>
-                        <h3><span>02</span> Web Design</h3>
+                        <h3><span></span> Web Design</h3>
                     </div>
                     <div class="services-info">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias totam, corrupti adipisci tempore facilis quo temporibus unde iure quos eum!</p>
@@ -154,7 +152,7 @@
                         <div class="services-icon">
                             <img src="img/gray-icon-03.png" alt="">
                         </div>
-                        <h3><span>03</span> Logo Design</h3>
+                        <h3><span></span> Logo Design</h3>
                     </div>
                     <div class="services-info">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias totam, corrupti adipisci tempore facilis quo temporibus unde iure quos eum!</p>
@@ -168,7 +166,7 @@
                         <div class="services-icon">
                             <img src="img/gray-icon-04.png" alt="">
                         </div>
-                        <h3><span>04</span> SEO</h3>
+                        <h3><span></span> SEO</h3>
                     </div>
                     <div class="services-info">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias totam, corrupti adipisci tempore facilis quo temporibus unde iure quos eum!</p>
@@ -176,7 +174,7 @@
                 </a>
             </div>
 
-            <div class="services-item">
+            <!-- <div class="services-item">
                 <a href="">
                     <div class="services-title">
                         <div class="services-icon">
@@ -188,7 +186,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias totam, corrupti adipisci tempore facilis quo temporibus unde iure quos eum!</p>
                     </div>
                 </a>
-            </div>
+            </div> -->
 
             <div class="services-item">
                 <a href="">
@@ -196,7 +194,7 @@
                         <div class="services-icon">
                             <img src="img/gray-icon-06.png" alt="">
                         </div>
-                        <h3><span>06</span> Email Marketing</h3>
+                        <h3><span></span> Email Marketing</h3>
                     </div>
                     <div class="services-info">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias totam, corrupti adipisci tempore facilis quo temporibus unde iure quos eum!</p>
@@ -210,7 +208,7 @@
                         <div class="services-icon">
                             <img src="img/gray-icon-07.png" alt="">
                         </div>
-                        <h3><span>07</span> Photo Editing</h3>
+                        <h3><span></span> Photo Editing</h3>
                     </div>
                     <div class="services-info">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias totam, corrupti adipisci tempore facilis quo temporibus unde iure quos eum!</p>
@@ -224,7 +222,7 @@
                         <div class="services-icon">
                             <img src="img/gray-icon-08.png" alt="">
                         </div>
-                        <h3><span>08</span> App Development</h3>
+                        <h3><span></span> App Development</h3>
                     </div>
                     <div class="services-info">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias totam, corrupti adipisci tempore facilis quo temporibus unde iure quos eum!</p>
@@ -238,7 +236,21 @@
                         <div class="services-icon">
                             <img src="img/gray-icon-09.png" alt="">
                         </div>
-                        <h3><span>09</span> Copywriting</h3>
+                        <h3><span></span> Copywriting</h3>
+                    </div>
+                    <div class="services-info">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias totam, corrupti adipisci tempore facilis quo temporibus unde iure quos eum!</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="services-item">
+                <a href="">
+                    <div class="services-title">
+                        <div class="services-icon">
+                            <img src="img/gray-icon-09.png" alt="">
+                        </div>
+                        <h3><span></span> Copywriting</h3>
                     </div>
                     <div class="services-info">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias totam, corrupti adipisci tempore facilis quo temporibus unde iure quos eum!</p>
@@ -248,13 +260,13 @@
 
         </div>
         <div class="services-button">
-            <a href="#feature1" class="btn-black-transparent">View More Services &#8594;</a>
+            <a href="#feature1" class="btn-black-transparent">Start A Project</a>
         </div>
     </div>
 </section>
 
 <!-- Feature 1 Section -->
-<section class="feature bg-light-grey" id="feature1">
+<!-- <section class="feature bg-light-grey" id="feature1">
     <div class="container">
         <div class="feature-box">
 
@@ -317,10 +329,10 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <!-- Feature 2 Section -->
-<section class="feature bg-light-grey" id="feature2">
+<!-- <section class="feature bg-light-grey" id="feature2">
     <div class="container">
         <div class="feature-box">
 
@@ -383,10 +395,10 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <!-- Feature 3 Section -->
-<section class="feature bg-light-grey" id="feature3">
+<!-- <section class="feature bg-light-grey" id="feature3">
     <div class="container">
         <div class="feature-box">
 
@@ -449,10 +461,10 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <!-- Feature 4 Section -->
-<section class="feature bg-light-grey" id="feature4">
+<!-- <section class="feature bg-light-grey" id="feature4">
     <div class="container">
         <div class="feature-box">
 
@@ -516,10 +528,163 @@
             </div>
         </div>
     </div>
+</section> -->
+
+<!-- Pricing Section -->
+<section class="pricing">
+    <div class="container">
+        <h2>Pick One Of Our Packages.</h2>
+        <div class="pricing-box">
+
+            <div class="pricing-card">
+                <div class="pricing-title">
+                    <h3>Ultimate Business Package</h3>
+                </div>
+                <div class="pricing-header">
+                    <p>Recommended for small businesses and fast-growing companies.</p>
+                </div>
+                <div class="pricing-info">
+                    <h4><span>3</span> Logo Designs</h4>
+                    <h4><span>Business</span> Card Design</h4>
+                    <h4><span>Stationary</span> Letterhead</h4>
+                    <h4><span>Social</span> Media Kit</h4>
+                    <h4><span>PPC</span> Digital Advertising</h4>
+                    <div class="pricing-button">
+                        <a href="#" class="btn-purple">Free Project Proposal</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-card">
+                <div class="pricing-title">
+                    <h3>Ultimate Business Package</h3>
+                </div>
+                <div class="pricing-header">
+                    <p>Recommended for small businesses and fast-growing companies.</p>
+                </div>
+                <div class="pricing-info">
+                    <h4><span>3</span> Logo Designs</h4>
+                    <h4><span>Business</span> Card Design</h4>
+                    <h4><span>Stationary</span> Letterhead</h4>
+                    <h4><span>Social</span> Media Kit</h4>
+                    <h4><span>PPC</span> Digital Advertising</h4>
+                    <div class="pricing-button">
+                        <a href="#" class="btn-purple">Free Project Proposal</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-card">
+                <div class="pricing-title">
+                    <h3>Ultimate Business Package</h3>
+                </div>
+                <div class="pricing-header">
+                    <p>Recommended for small businesses and fast-growing companies.</p>
+                </div>
+                <div class="pricing-info">
+                    <h4><span>3</span> Logo Designs</h4>
+                    <h4><span>Business</span> Card Design</h4>
+                    <h4><span>Stationary</span> Letterhead</h4>
+                    <h4><span>Social</span> Media Kit</h4>
+                    <h4><span>PPC</span> Digital Advertising</h4>
+                    <div class="pricing-button">
+                        <a href="#" class="btn-purple">Free Project Proposal</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-card">
+                <div class="pricing-title">
+                    <h3>E-commerce Explosion Package</h3>
+                </div>
+                <div class="pricing-header">
+                    <p>Recommended for small businesses and fast-growing companies.</p>
+                </div>
+                <div class="pricing-info">
+                    <h4><span>Brand</span> Design</h4>
+                    <h4><span>3 Logo</span> Designs</h4>
+                    <h4><span>3</span> Page Website</h4>
+                    <h4><span>Social</span> Media Kit</h4>
+                    <h4><span>PPC</span> Digital Advertising</h4>
+                    <div class="pricing-button">
+                        <a href="#" class="btn-purple">Free Project Proposal</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </section>
 
+    <!-- Directory Section -->
+    <section class="directory" id="directory">
+        <div class="container">
+            <h2>Special Services</h2>
+            <div class="underline"></div>
+            <div class="directory-tab-box">
+                <button class="tablink" onclick="openPage('Overview', this, '')"><span>01</span> Advertising</button>
+                <button class="tablink" onclick="openPage('Branding', this, '')"><span>02</span> Branding</button>
+                <button class="tablink" onclick="openPage('E-commerce', this, '')"><span>03</span> E-commerce</button>
+            </div>
+            <div class="directory-tab-info">
+
+                <!-- Overview Section -->
+                <div id="Overview" class="tabcontent">
+                    <div class="overview-section">
+                        <div class="process-box">
+                            <div class="process-image">
+                                <img src="img/gray-icon-01.png" alt="">
+                            </div>
+                            <div class="process-text">
+                                <h3>Our Approach</h3>
+                                <h4>Advertising 01</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto blanditiis a veritatis non quasi doloremque, eius enim quae excepturi tenetur?</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto blanditiis a veritatis non quasi doloremque, eius enim quae excepturi tenetur?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Overview Section -->
+                <div id="Branding" class="tabcontent">
+                    <div class="overview-section">
+                        <div class="process-box">
+                            <div class="process-image">
+                                <img src="img/gray-icon-01.png" alt="">
+                            </div>
+                            <div class="process-text">
+                                <h3>Our Approach</h3>
+                                <h4>Branding 02</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto blanditiis a veritatis non quasi doloremque, eius enim quae excepturi tenetur?</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto blanditiis a veritatis non quasi doloremque, eius enim quae excepturi tenetur?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Overview Section -->
+                <div id="E-commerce" class="tabcontent">
+                    <div class="overview-section">
+                        <div class="process-box">
+                            <div class="process-image">
+                                <img src="img/gray-icon-01.png" alt="">
+                            </div>
+                            <div class="process-text">
+                                <h3>Our Approach</h3>
+                                <h4>E-commerce 03</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto blanditiis a veritatis non quasi doloremque, eius enim quae excepturi tenetur?</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto blanditiis a veritatis non quasi doloremque, eius enim quae excepturi tenetur?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
 <!-- Process 1 Section -->
-<section class="process" id="process1">
+<!-- <section class="process" id="process1">
     <div class="container">
         <div class="process-title-box">
             <div class="process-title process-title-und">
@@ -544,10 +709,10 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <!-- Process 2 Section -->
-<section class="process" id="process2">
+<!-- <section class="process" id="process2">
     <div class="container">
         <div class="process-title-box">
             <div class="process-title">
@@ -572,10 +737,10 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <!-- Process 3 Section -->
-<section class="process" id="process3">
+<!-- <section class="process" id="process3">
     <div class="container">
         <div class="process-title-box">
             <div class="process-title">
@@ -600,7 +765,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <!-- Credibility Section -->
 <section class="credibility">
@@ -693,10 +858,10 @@
 </section> -->
 
 <!-- Web Section -->
-<section class="web" id="web">
+<!-- <section class="web" id="web">
     <div class="container">
         <div class="web-box">
-            <!-- <h4>Join Us!</h4> -->
+            <h4>Join Us!</h4>
             <h2>Want to join our team? Click the button below to get started.</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi doloribus repellat, architecto deserunt quis nihil ducimus perferendis eligendi! Recusandae, ab!</p>
             <div class="web-button">
@@ -704,7 +869,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <!-- Portfolio Section -->
 <section class="portfolio" id="portfolio">
@@ -713,28 +878,28 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi doloribus repellat, architecto deserunt quis nihil ducimus perferendis eligendi! Recusandae, ab!</p>
         <div class="portfolio-box">
             <div class="portfolio-item">
-                <img src="img/GRAY-logo-03.png" alt="">
+                <a href="#">Company Name</a>
             </div>
             <div class="portfolio-item">
-                <img src="img/GRAY-logo-03.png" alt="">
+                <a href="#">Company Name</a>
             </div>
             <div class="portfolio-item">
-                <img src="img/GRAY-logo-03.png" alt="">
+                <a href="#">Company Name</a>
             </div>
             <div class="portfolio-item">
-                <img src="img/GRAY-logo-03.png" alt="">
+                <a href="#">Company Name</a>
             </div>
             <div class="portfolio-item">
-                <img src="img/GRAY-logo-03.png" alt="">
+                <a href="#">Company Name</a>
             </div>
             <div class="portfolio-item">
-                <img src="img/GRAY-logo-03.png" alt="">
+                <a href="#">Company Name</a>
             </div>
             <div class="portfolio-item">
-                <img src="img/GRAY-logo-03.png" alt="">
+                <a href="#">Company Name</a>
             </div>
             <div class="portfolio-item">
-                <img src="img/GRAY-logo-03.png" alt="">
+                <a href="#">Company Name</a>
             </div>
         </div>
     </div>
@@ -808,11 +973,31 @@
                 <h3>Contact Info</h3>
                 <a href="tel:#"><li>(111) 222 - 3333</li></a>
                 <a href="mailto:#"><li>example@example.com</li></a>
-                <a href="https://logo-genius.com/"><li>Developed By Logo Genius</li></a>
+                <a href="https://logo-genius.com/"><li>Developed By Gray Marketing</li></a>
             </div>
         </div>
     </div>
 </section>
+
+    <!-- Javascript -->
+    <script>
+        function openPage(pageName,elmnt,color) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+          }
+          document.getElementById(pageName).style.display = "block";
+          elmnt.style.backgroundColor = color;
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
 
 <!-- --------------------- MODALS -------------------- -->
 <!-- Boiler Plate -->

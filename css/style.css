@@ -33,7 +33,7 @@ body {
     --color-accent: #444;
     --color-dark-purple: #1b1464;
     /* --color-purple: #555cd0; */
-    --color-purple: #6200EE;
+    --color-purple: #64409f;
     /* --color-purple: #6d63bc; */
     --color-light-purple: #676e8b;
     --color-bg-purple: rgba(223, 220, 253, 0.1);
@@ -42,7 +42,7 @@ body {
     --color-light-grey: #f4f6f8;
     --color-medium-grey: #999;
     --color-dark-grey: #090909;
-    --color-black: #000;
+    --color-black: #242037;
     --color-white: #ffffff;
 
     --gradient-primary: linear-gradient(to right, var(--color-purple), var(--color-dark-purple));
@@ -56,15 +56,28 @@ body {
 /* ******************************************************** START OF HEADER SECTION ************************************************************ */
 /* Header Section */
 .header {
-    background: var(--color-white);
+    background: url(../img/pexels-morthy-jameson-9588219.jpg);
     height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding-top: var(--bar-height);
     box-sizing: border-box;
     background-size: cover;
     z-index: 4;
     position: relative;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.8); 
 }
 
 .u-centered {
@@ -90,7 +103,7 @@ body {
 }
 
 .header-text h1 {
-    color: var(--color-black);
+    color: var(--color-white);
     font-size: 5rem;
     font-weight: 800;
     text-align: center;
@@ -99,7 +112,7 @@ body {
 }
 
 .header-text h4 {
-    color: var(--color-black);
+    color: var(--color-white);
     font-size: 1.5rem;
     letter-spacing: .5px;
     font-weight: 500;
@@ -250,7 +263,7 @@ body {
 }
 
 .nav__link {
-    color: var(--color-dark-grey);
+    color: var(--color-purple);
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 1.6;
@@ -265,18 +278,18 @@ body {
     opacity: 0.8;
 }
 
-.nav .btn-black-transparent {
+.nav .btn-purple-transparent {
     padding: 1.1rem 1.75rem;
     margin-right: 1rem;
 }
 
-.nav .btn-black {
+.nav .btn-purple {
     padding: 1.3rem 1.75rem;
     margin-right: 1rem;
 }
 
 .nav .btn-login {
-
+    color: var(--color-purple);
 }
 
 @media screen and (min-width: 992px) {
@@ -307,7 +320,28 @@ body {
 /* __________________________________________________________________________________________________________________ */
 /* Services Section */
 .services {
-    padding: 6rem 8rem 12rem 8rem;
+    /* background: url(../img/Anthony-background-01.jpg); */
+    /* padding: 6rem 12rem; */
+    height: 100vh;
+    padding-top: var(--bar-height);
+    box-sizing: border-box;
+    background-size: cover;
+    z-index: 4;
+    position: relative;
+    background-size: 1200px auto;
+    background-position: center;
+}
+
+.services::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    border-radius: 4px;
+    /* background: rgba(0, 0, 0, 0.8);  */
 }
 
 .services h2 {
@@ -323,7 +357,7 @@ body {
     background-color: var(--color-white);
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 6rem;
 }
@@ -336,14 +370,8 @@ body {
     justify-content: flex-start;
     align-items: left;
     text-align: left;
-    margin-bottom: 2rem;
+    margin: 0 4rem 4rem 4rem;
 }
-
-/* .services-item:nth-child(1) {
-    opacity: 1;
-    border-bottom: 1px solid var(--color-purple);
-    padding-bottom: 1.5rem;
-} */
 
 .services-item a {
     opacity: 1;
@@ -355,8 +383,13 @@ body {
 .services-item a:hover {
     transform: scale(1.1);
     opacity: 1;
-    border-bottom: 1px solid var(--color-purple);
-    padding-bottom: 1.5rem;
+    /* border-bottom: 1px solid var(--color-purple);
+    padding-bottom: 1.5rem; */
+}
+
+.services-item img :nth-child(5) {
+    width: 100px;
+    height: auto;
 }
 
 .services-item:nth-child(7) {
@@ -373,7 +406,9 @@ body {
 
 .services-title {
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 2rem;
 }
 
@@ -410,13 +445,18 @@ body {
 }
 
 .services-icon img {
-    width: 45px;
+    width: 100px;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 2rem;
+    margin-bottom: 3rem;
 }
+
+/* .services-icon img:hover {
+    display: none;
+} */
 
 .services-info {
     
@@ -427,18 +467,26 @@ body {
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 1.6;
+    /* visibility: hidden; */
+    opacity: 0;
+}
+
+.services-info p:hover {
+    /* visibility: visible; */
+    opacity: 1;
 }
 
 .services-button {
     margin-top: 0rem;
     margin-left: 6rem;
     display: flex;
-    justify-content: left;
-    align-items: left;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Feature Section */
 .feature {
+    background-color: rgb(250, 250, 250);
     padding: 12rem 8rem;
 }
 
@@ -539,10 +587,156 @@ body {
     border-bottom: 1px solid var(--color-purple);
 }
 
+/* Pricing Section */
+.pricing {
+    background: url(../img/nyc.jpg);
+    background-position: center;
+    padding: 12rem 8rem;
+    padding-top: var(--bar-height);
+    box-sizing: border-box;
+    background-size: cover;
+    z-index: 4;
+    position: relative;
+}
+
+.pricing::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.8); 
+}
+
+/* .pricing {
+    padding: 12rem 8rem;
+    background-color: var(--color-black);
+} */
+
+.pricing h2 {
+    color: var(--color-white);
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 6rem;
+    line-height: 1.3;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.pricing-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 4rem;
+}
+
+.pricing-card {
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+    height: 50rem;
+    background-color: var(--color-white);
+    box-shadow: 0 .75rem .75rem rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.pricing-card:nth-child(1) {
+    margin-bottom: 6rem;
+}
+
+.pricing-card:nth-child(2) {
+    margin-bottom: 6rem;
+}
+
+.pricing-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(248, 248, 248);
+    padding: 2rem 0;
+    border-radius: 4px;
+}
+
+.pricing-title h3 {
+    color: var(--color-black);
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.6;
+    text-transform: uppercase;
+}
+
+.pricing-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 4rem;
+    border-bottom: 1px solid lightgray;
+}
+
+.pricing-header p {
+    color: var(--color-dark-grey);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.6;
+    font-style: italic;
+    text-align: center;
+}
+
+.pricing-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 4rem;
+}
+
+.pricing-info h4 {
+    color: var(--color-dark-grey);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.pricing-info h4 span {
+    font-weight: 700;
+}
+
+.pricing-button {
+    margin-top: 3rem;
+}
+
 /* Credibility Section */
 .credibility {
-    background-color: var(--color-black);
+    background: url(../img/nyc.jpg);
     padding: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: var(--bar-height);
+    box-sizing: border-box;
+    z-index: 4;
+    position: relative;
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.credibility::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.8); 
 }
 
 .credibility-box {
@@ -984,7 +1178,7 @@ body {
     font-weight: 400;
     letter-spacing: .5px;
     line-height: 1.6;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     padding-right: 16rem;
 }
 
@@ -996,24 +1190,27 @@ body {
 }
 
 .portfolio-item {
-    width: 22rem;
-    height: 22rem;
-    background: transparent;
-    color: var(--color-black);
-    border: 2px solid var(--color-black);
-    padding: 2rem;
-    margin: 2rem;
+    /* width: 22rem;
+    height: 22rem; */
+    margin-right: 5rem;
+    margin-bottom: 5rem;
 }
 
 .portfolio-item a {
+    color: var(--color-dark-grey);
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    line-height: 1.3;
+    text-transform: uppercase;
     cursor: pointer;
     transition: .5s ease all;
     text-decoration: none;
-    text-transform: uppercase;
+    opacity: .2;
 }
 
 .portfolio-item a:hover {
-
+    opacity: 1;
 }
 
 .portfolio-item img {
@@ -1475,11 +1672,136 @@ display: flex;
 padding: 0 3rem 3rem 3rem;
 }
 
+/* Directory Section */
+.directory {
+    padding: 12rem 4rem;
+}
+
+.directory h2 {
+    color: var(--color-dark-grey);
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    line-height: 1.3;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.directory h3 {
+    color: var(--color-black);
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.directory .underline {
+    margin-bottom: 4rem;
+}
+
+.directory-tab-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: left;
+}
+/* Style tab links */
+.tablink {
+    text-decoration: none;
+    font-size: 2.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.4);
+    transition: .3s ease;
+    font-family: inherit;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.tablink:nth-child(2) {
+    margin: 0 6rem;
+}
+
+.tablink:hover {
+    color: var(--color-dark-grey);
+}
+
+.tablink span {
+    font-weight: 500;
+}
+/* .tablink {
+    background-color: transparent;
+    border: 1px solid var(--color-black);
+    color: black;
+    cursor: pointer;
+    font-size: 1.3rem;
+    padding: 1.25rem 2rem;
+    border-radius: 46px;
+    font-family: inherit;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+  
+.tablink:hover {
+    background-color: var(--color-black);
+    color: white;
+} */
+
+.tabcontent {
+    color: black;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+/* Overview Section */
+.overview-section {
+    /* background-color: var(--color-black);
+    padding: 8rem;
+    border-radius: 24px; */
+}
+
+.overview-section h2 {
+    color: var(--color-black);
+    font-size: 6rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.overview-section h3 {
+    color: var(--color-dark-grey);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3rem; 
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.overview-section h4 {
+    /* color: var(--color-light-purple); */
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+.overview-section p {
+    color: var(--color-dark-grey);
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    padding-right: 8rem;
+}
+
 /* ******************************************************** Footer Section ***************************************************** */
 /* Footer Section */
 .footer {
     padding: 6rem 0;
-    background-color: var(--color-purple);
+    background-color: var(--color-light-grey);
     display: flex;
     align-items: center;
     padding-top: var(--bar-height);
@@ -1505,7 +1827,7 @@ padding: 0 3rem 3rem 3rem;
     font-weight: 500;
     line-height: 1.6;
     margin: 2rem 0;
-    color: var(--color-white);
+    color: var(--color-black);
 }
 
 .footer-box-company img{ 
@@ -1521,13 +1843,13 @@ padding: 0 3rem 3rem 3rem;
     text-align: center;
     font-size: 1.75rem;
     font-weight: 700;
-    color: var(--color-white);
+    color: var(--color-black);
 }
 
 .footer-box-links li {
     font-size: 1.25rem;
     font-weight: 500;
-    color: var(--color-white);
+    color: var(--color-black);
     letter-spacing: .5px;
     line-height: 1.6;
     text-align: center;
@@ -1539,7 +1861,7 @@ padding: 0 3rem 3rem 3rem;
 .footer-box-links a {
     font-size: 1.25rem;
     font-weight: 500;
-    color: var(--color-white);
+    color: var(--color-black);
     letter-spacing: .5px;
     line-height: 1.6;
     text-align: center;
@@ -1565,13 +1887,13 @@ padding: 0 3rem 3rem 3rem;
     text-align: center;
     font-size: 1.75rem;
     font-weight: 700;
-    color: var(--color-white);
+    color: var(--color-black);
 }
 
 .footer-box-socials li {
     font-size: 4rem;
     font-family: inherit;
-    color: var(--color-white);
+    color: var(--color-black);
     letter-spacing: 1px;
     line-height: 1.6;
     text-align: center;
@@ -1583,7 +1905,7 @@ padding: 0 3rem 3rem 3rem;
 
 .footer-box-socials i {
     font-size: 2rem;
-    color: var(--color-white);
+    color: var(--color-black);
     letter-spacing: 1px;
     line-height: 1.6;
     text-align: center;
@@ -1603,13 +1925,13 @@ padding: 0 3rem 3rem 3rem;
     text-align: center;
     font-size: 1.75rem;
     font-weight: 700;
-    color: var(--color-white);
+    color: var(--color-black);
 }
 
 .footer-box-development p {
     font-size: 1.25rem;
     font-weight: 500;
-    color: var(--color-white);
+    color: var(--color-black);
     letter-spacing: .5px;
     line-height: 1.6;
     text-align: center;
@@ -1619,7 +1941,7 @@ padding: 0 3rem 3rem 3rem;
 .footer-box-development li {
     font-size: 1.25rem;
     font-weight: 500;
-    color: var(--color-white);
+    color: var(--color-black);
     letter-spacing: .5px;
     line-height: 1.6;
     text-align: center;
@@ -1632,7 +1954,7 @@ padding: 0 3rem 3rem 3rem;
 .footer-box-development a {
     font-size: 1.25rem;
     font-weight: 500;
-    color: var(--color-white);
+    color: var(--color-black);
     letter-spacing: .5px;
     line-height: 1.6;
     text-align: center;
