@@ -563,12 +563,12 @@ body {
 .pricing-card {
     display: flex;
     flex-direction: column;
-    width: 30rem;
+    width: 28.5rem;
     height: auto;
     background-color: var(--color-white);
     box-shadow: 0 .75rem .75rem rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    margin: 0 2rem;
+    margin: 0 1rem;
 }
 
 /* .pricing-card:nth-child(1) {
