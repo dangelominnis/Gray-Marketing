@@ -987,8 +987,8 @@ body {
 
 /* Reviews Section */
 .reviews {
-    background: url(../img/gray-bg-01.png);
-    /* background: var(--color-white); */
+    /* background: url(../img/gray-bg-01.png); */
+    background: var(--color-white);
     padding: 12rem 8rem;
     box-sizing: border-box;
     background-size: 1920px cover;
@@ -1197,7 +1197,7 @@ body {
     /* background: var(--color-white); */
     padding: 12rem 8rem;
     box-sizing: border-box;
-    background-size: 1920px cover;
+    background-size: cover;
     background-position: center;
     z-index: 4;
     position: relative;
