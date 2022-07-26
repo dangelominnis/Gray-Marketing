@@ -356,7 +356,7 @@ body {
     height: 100%;
     width: 100%;
     z-index: -1;
-    background: rgba(255, 255, 255, .7); 
+    background: rgba(255, 255, 255, .6); 
 }
 
 .services h2 {
@@ -497,7 +497,7 @@ body {
     height: 100%;
     width: 100%;
     z-index: -1;
-    background: rgba(255, 255, 255, 0.7); 
+    background: rgba(255, 255, 255, 0.6); 
 }
 
 .pricing h2 {
@@ -1008,7 +1008,7 @@ body {
     height: 100%;
     width: 100%;
     z-index: -1;
-    background: rgba(255, 255, 255, 0.7); 
+    background: rgba(255, 255, 255, 0.6); 
 }
 
 .reviews h2 {
@@ -1211,7 +1211,7 @@ body {
     height: 100%;
     width: 100%;
     z-index: -1;
-    background: rgba(255, 255, 255, 0.7); 
+    background: rgba(255, 255, 255, 0.6); 
 }
 
 .directory .und {
