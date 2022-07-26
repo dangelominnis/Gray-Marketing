@@ -337,7 +337,7 @@ body {
 /* __________________________________________________________________________________________________________________ */
 /* Services Section */
 .services {
-    background: url(../img/gray-bg-02.png);
+    background: url(../img/gray-bg-01.png);
     /* background: var(--color-white); */
     padding: 12rem 8rem;
     box-sizing: border-box;
@@ -356,7 +356,7 @@ body {
     height: 100%;
     width: 100%;
     z-index: -1;
-    background: rgba(255, 255, 255, .6); 
+    background: rgba(255, 255, 255, 0.5); 
 }
 
 .services h2 {
@@ -584,7 +584,6 @@ body {
     justify-content: center;
     align-items: center;
     padding: 2rem 4rem;
-    border-bottom: 1px solid lightgray;
 }
 
 .pricing-header p {
