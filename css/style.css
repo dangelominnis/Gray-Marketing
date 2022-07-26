@@ -383,8 +383,8 @@ body {
 }
 
 .services-item {
-    width: 30rem;
-    height: 30rem;
+    width: 28rem;
+    height: 28rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -751,7 +751,7 @@ body {
 .certifications {
     /* background: url(../img/gray-bg-02.png); */
     background: var(--color-light-grey);
-    padding: 6rem 2rem 4rem 2rem;
+    padding: 4rem 2rem 4rem 2rem;
     box-sizing: border-box;
     background-size: cover;
     background-position: center;
