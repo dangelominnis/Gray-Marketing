@@ -1958,6 +1958,7 @@ body {
     /* Header Section */
     .header {
         height: 100vh;
+        background-size: 600px cover;
     }
 
     .header-box {
@@ -1992,6 +1993,7 @@ body {
     /* Crediblity Section */
     .credibility {
         padding: 8rem 2rem;
+        background-size: 600px cover;
     }
 
     .credibility-header {
