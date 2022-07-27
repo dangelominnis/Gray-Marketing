@@ -24,8 +24,9 @@
     overflow: scroll;
     padding: 48px;
     line-height: 1.8;
-    width: 80%;
-    height: 80%;
+    width: 50%;
+    height: auto;
+    border-radius: 24px;
     top: 50%;
     left: 50%;
     -webkit-transform: translateX(-50%) translateY(-50%);
@@ -34,7 +35,15 @@
     box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
     background: white;
     color: #34495E;
+    transition: .5s ease-in-out all;
+    /* animation: rotate .3s linear; */
 }
+
+/* #services-details-content #services-details-inner:hover {
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+} */
   
 #services-details-content #services-details-inner h2 { margin-top: 0; }
   
@@ -51,7 +60,31 @@
     opacity: 0.5;
     -webkit-transition: opacity 200ms;
     transition: opacity 200ms;
+    /* transform: rotate(340deg); */
+    transition: .5s ease-in-out all;
+    /* animation: rotate .5s linear; */
 }
   
 #services-details-content a.close:hover { opacity: 0.4; }
+
+#services-details-content h3 {
+    color: var(--color-dark-grey);
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 2rem;
+}
+
+#services-details-content p {
+    color: var(--color-dark-grey);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
 /* --------------------- MODALS -------------------- */
+
+/* Keyframes */
+@keyframes rotate {
+    100% {transform: rotate(360deg);}
+}

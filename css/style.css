@@ -29,7 +29,7 @@ body {
 }
 
 :root {
-    --bar-height: 90px;
+    --bar-height: 80px;
     --color-accent: #444;
     --color-dark-purple: #1b1464;
     /* --color-purple: #555cd0; */
@@ -45,7 +45,8 @@ body {
     --color-black: #242037;
     --color-white: #ffffff;
 
-    --gradient-primary: linear-gradient(to right, var(--color-purple), var(--color-dark-purple));
+    --gradient-primary: linear-gradient(to top, var(--color-purple), var(--color-black));
+    --gradient-primary2: linear-gradient(to top, var(--color-purple), var(--color-white));
     --gradient-secondary: linear-gradient(to top left, var(--color-primary), var(--color-primary), var(--color-purple));
 }
 
@@ -63,8 +64,9 @@ body {
 /* ******************************************************** START OF HEADER SECTION ************************************************************ */
 /* Header Section */
 .header {
-    background: url(../img/pexels-morthy-jameson-9588219.jpg);
-    height: 50vh;
+    background: url(../img/nyc.jpg);
+    /* background: var(--color-white); */
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,6 +75,7 @@ body {
     background-size: cover;
     z-index: 4;
     position: relative;
+    /* border-bottom: 1px solid lightgray; */
 }
 
 .header::before {
@@ -84,7 +87,7 @@ body {
     width: 100%;
     z-index: -1;
     border-radius: 4px;
-    background: rgba(0, 0, 0, 0.8); 
+    background: rgba(100, 64, 159, .4);
 }
 
 .u-centered {
@@ -110,7 +113,7 @@ body {
 }
 
 .header-text h1 {
-    color: var(--color-white);
+    color: var(--color-black);
     font-size: 5rem;
     font-weight: 800;
     text-align: center;
@@ -120,11 +123,10 @@ body {
 
 .header-text h4 {
     color: var(--color-white);
-    font-size: 1.5rem;
-    letter-spacing: .5px;
+    font-size: 1.75rem;
     font-weight: 500;
     line-height: 1.6;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 .header-form {
@@ -150,14 +152,12 @@ body {
     font-family: inherit;
     color: var(--color-light-purple);
     font-size: 1.5rem;
-    letter-spacing: .5px;
     font-weight: 500;
 }
 
 .header-item .placeholder {
     color: var(--color-light-purple);
     font-size: 1.5rem;
-    letter-spacing: .5px;
     font-weight: 600;
     line-height: 1.6;
 }
@@ -165,9 +165,9 @@ body {
 .header-item .btn-submit {
     background: var(--color-purple);
     color: var(--color-white);
+    border: 2px solid var(--color-purple);
     font-family: inherit;
     font-size: 1.5rem;
-    letter-spacing: .5px;
     font-weight: 600;
     /* width: 20%; */
     width: 17rem;
@@ -175,17 +175,18 @@ body {
     position: absolute;
     top: 0%;
     right: 0%;
-    border: 2px solid var(--color-purple);
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
-    transition: .3s all;
+    transition: .5s ease-in-out all;
     cursor: pointer;
 }
 
 .header-item .btn-submit:hover {
-    background: transparent;
-    color: var(--color-purple);
-    border: 2px solid var(--color-purple);
+    /* background: var(--color-black);
+    color: var(--color-white); */
+    background: var(--color-purple);
+    /* opacity: .8; */
+    /* border: 2px solid var(--color-purple); */
 }
 
 .header-image {
@@ -211,7 +212,8 @@ body {
     left: 0;
     width: 100%;
     height: var(--bar-height);
-    border-bottom: .5px solid lightgray;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    /* border-bottom: .5px solid lightgray; */
     transition: background 0.15s;
     /* background-image: url(../img/gray-bg-01.png); */
     background: var(--color-white);
@@ -280,7 +282,7 @@ body {
 }
 
 .nav__link {
-    color: var(--color-purple);
+    color: var(--color-black);
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 1.6;
@@ -292,7 +294,7 @@ body {
 }
 
 .nav__link:hover {
-    opacity: 0.8;
+    color: var(--color-purple);
 }
 
 .nav .btn-purple-transparent {
@@ -481,7 +483,7 @@ body {
     background: url(../img/gray-bg-01.png);
     /* background: var(--color-white); */
     background-position: center;
-    padding: 12rem 8rem 4rem 8rem;
+    padding: 12rem 0rem;
     padding-top: var(--bar-height);
     box-sizing: border-box;
     background-size: cover;
@@ -542,7 +544,7 @@ body {
 .pricing-card {
     display: flex;
     flex-direction: column;
-    width: 28.5rem;
+    width: 32rem;
     height: auto;
     background-color: var(--color-white);
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
@@ -622,7 +624,7 @@ body {
 
 /* Credibility Section */
 .credibility {
-    background: url(../img/nyc.jpg);
+    background: url(../img/new-york-g854177f93_1920.jpg);
     padding: 12rem;
     display: flex;
     align-items: center;
@@ -632,9 +634,9 @@ body {
     z-index: 4;
     position: relative;
     background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .credibility::before {
@@ -645,7 +647,9 @@ body {
     height: 100%;
     width: 100%;
     z-index: -1;
-    background: rgba(0, 0, 0, 0.8); 
+    /* background: rgba(0, 0, 0, 0.75);  */
+    background: rgba(100, 64, 159, .5);
+    /* background: rgba(36, 32, 55, 0.9);  */
 }
 
 .credibility-box {
@@ -1192,9 +1196,9 @@ body {
 
 /* Directory Section */
 .directory {
-    background: url(../img/gray-bg-01.png);
-    /* background: var(--color-white); */
-    padding: 12rem 8rem;
+    /* background: url(../img/gray-bg-01.png); */
+    background: var(--color-black);
+    padding: 12rem 8rem 4rem 8rem;
     box-sizing: border-box;
     background-size: cover;
     background-position: center;
@@ -1210,7 +1214,7 @@ body {
     height: 100%;
     width: 100%;
     z-index: -1;
-    background: rgba(255, 255, 255, 0.6); 
+    /* background: rgba(255, 255, 255, 0.6);  */
 }
 
 .directory .und {
@@ -1218,7 +1222,7 @@ body {
 }
 
 .directory h2 {
-    color: var(--color-dark-grey);
+    color: var(--color-white);
     font-size: 4rem;
     font-weight: 800;
     margin-bottom: 4rem;
@@ -1228,7 +1232,7 @@ body {
 }
 
 .directory h3 {
-    color: var(--color-black);
+    color: var(--color-white);
     font-size: 2.5rem;
     font-weight: 600;
     margin-bottom: 3rem;
@@ -1251,7 +1255,8 @@ body {
     font-size: 2.75rem;
     font-weight: 800;
     /* text-transform: uppercase; */
-    color: rgba(0, 0, 0, 0.4);
+    /* color: rgba(0, 0, 0, 0.4); */
+    color: var(--color-white);
     transition: .3s ease;
     font-family: inherit;
     background-color: transparent;
@@ -1264,7 +1269,7 @@ body {
 }
 
 .tablink:hover {
-    color: var(--color-dark-grey);
+    color: var(--color-purple);
 }
 
 .tablink span {
@@ -1272,7 +1277,8 @@ body {
 }
 
 .tabcontent {
-    color: black;
+    /* color: black; */
+    color: white;
     display: none;
     padding: 100px 20px;
     height: 100%;
@@ -1280,7 +1286,7 @@ body {
 
 /* Overview Section */
 .overview-section h2 {
-    color: var(--color-black);
+    color: var(--color-white);
     font-size: 4rem;
     font-weight: 700;
     margin-bottom: 4rem;
@@ -1288,7 +1294,7 @@ body {
 }
 
 .overview-section h3 {
-    color: var(--color-dark-grey);
+    color: var(--color-white);
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 3rem;
@@ -1296,14 +1302,15 @@ body {
 }
 
 .overview-section h4 {
-    color: rgba(0, 0, 0, 0.4);
+    /* color: rgba(0, 0, 0, 0.4); */
+    color: white;
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 3rem;
 }
 
 .overview-section p {
-    color: var(--color-dark-grey);
+    color: var(--color-white);
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.6;
@@ -1334,12 +1341,13 @@ body {
     font-size: 2.75rem;
     font-weight: 800;
     text-transform: uppercase;
-    color: rgba(0, 0, 0, 0.4);
+    /* color: rgba(0, 0, 0, 0.4); */
+    color: white;
     transition: .3s ease;
 }
 
 .process-title a:hover {
-    color: var(--color-dark-grey);
+    color: var(--color-purple);
 }
 
 .process-title a span {
@@ -1352,7 +1360,7 @@ body {
 }
 
 .process-title h2 {
-    color: var(--color-dark-grey);
+    color: var(--color-white);
     font-size: 2.75rem;
     font-weight: 800;
     text-transform: uppercase;
@@ -1385,7 +1393,7 @@ body {
 }
 
 .process-text h3 {
-    color: var(--color-dark-grey);
+    color: var(--color-white);
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 3rem; 
@@ -1393,7 +1401,8 @@ body {
 }
 
 .process-text h4 {
-    color: rgba(0, 0, 0, 0.4);
+    /* color: rgba(0, 0, 0, 0.4); */
+    color: white;
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 3rem;
@@ -1401,7 +1410,7 @@ body {
 }
 
 .process-text p {
-    color: var(--color-dark-grey);
+    color: var(--color-white);
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 1.6;
