@@ -61,6 +61,12 @@ body {
     border-radius: 8px;
 }
 
+#more {display: none;}
+
+#more2 {display: none;}
+
+#more3 {display: none;}
+
 /* ******************************************************** START OF HEADER SECTION ************************************************************ */
 /* Header Section */
 .header {
@@ -277,7 +283,7 @@ body {
     height: auto;
     /* height: calc(100vh - var(--bar-height)); */
     padding: 32px;
-    background: var(--color-dark-grey);
+    background: var(--color-black);
     box-sizing: border-box;
 }
 
@@ -431,7 +437,7 @@ body {
 }
 
 .services-title h3 {
-    color: var(--color-dark-grey);
+    color: var(--color-black);
     font-size: 2.5rem;
     font-weight: 800;
     line-height: 1.3;
@@ -464,7 +470,7 @@ body {
 }
 
 .services-info p {
-    color: var(--color-dark-grey);
+    color: var(--color-black);
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.6;
@@ -536,8 +542,8 @@ body {
 .pricing-box {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     padding-bottom: 4rem;
 }
 
@@ -546,7 +552,7 @@ body {
     flex-direction: column;
     /* justify-content: flex-end; */
     width: 30rem;
-    height: 115rem;
+    height: 116rem;
     background-color: var(--color-white);
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
     border-radius: 16px;
@@ -591,7 +597,7 @@ body {
 }
 
 .pricing-header p {
-    color: var(--color-dark-grey);
+    color: var(--color-black);
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 1.6;
@@ -609,7 +615,7 @@ body {
 }
 
 .pricing-info h4 {
-    color: var(--color-dark-grey);
+    color: var(--color-light-purple);
     font-size: 1.3rem;
     font-weight: 500;
     line-height: 1.6;
@@ -617,6 +623,7 @@ body {
 }
 
 .pricing-info h4 span {
+    color: var(--color-black);
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 1.6;
@@ -714,7 +721,7 @@ body {
     display: flex;
     flex-direction: column;
     padding-right: 4rem;
-    border-right: 1px solid rgb(55, 55, 55);
+    /* border-right: 1px solid rgb(55, 55, 55); */
 }
 
 .credibility-item:nth-child(4) {
@@ -808,7 +815,7 @@ body {
 }
 
 .packages h2 {
-    color: var(--color-dark-grey);
+    color: var(--color-black);
     font-size: 4rem;
     font-weight: 700;
     text-align: center;
@@ -875,7 +882,7 @@ body {
 }
 
 .packages-price h4 {
-    color: var(--color-dark-grey);
+    color: var(--color-black);
     font-size: 3rem;
     font-weight: 700;
 }
@@ -915,11 +922,88 @@ body {
     padding: 0 3rem 3rem 3rem;
 }
 
+/* Specials Section */
+.specials {
+    padding: 12rem 8rem;
+    background: var(--color-black);
+}
+
+.specials .und {
+    margin: auto;
+}
+
+.specials h2 {
+    color: var(--color-white);
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 4rem;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.specials-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 6rem;
+}
+
+.specials-card {
+    background: var(--color-white);
+    width: 40rem;
+    height: auto;
+    padding: 3rem 4rem;
+    border-radius: 8px;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
+    border-top: 5px solid var(--color-purple);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.specials-card:nth-child(2) {
+    margin: 0 2rem;
+}
+
+.specials-card img {
+    width: 125px;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.specials-card h3 {
+    color: var(--color-black);
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 2rem;
+}
+
+.specials-card p {
+    color: var(--color-light-purple);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.specials-card li {
+    color: var(--color-light-purple);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+
 /* Portfolio Section */
 .portfolio {
     /* background: url(../img/gray-bg-03.png); */
     background: var(--color-light-grey);
-    padding: 8rem;
+    padding: 8rem 8rem 4rem 8rem;
     box-sizing: border-box;
     background-size: cover;
     background-position: center;
@@ -943,7 +1027,7 @@ body {
 }
 
 .portfolio h2 {
-    color: var(--color-dark-grey);
+    color: var(--color-black);
     font-size: 4rem;
     font-weight: 800;
     margin-bottom: 4rem;
@@ -977,7 +1061,7 @@ body {
 }
 
 .portfolio-item a {
-    color: var(--color-dark-grey);
+    color: var(--color-black);
     font-size: 3rem;
     font-weight: 800;
     margin-bottom: 2rem;
@@ -1034,7 +1118,7 @@ body {
 }
 
 .reviews h2 {
-    color: var(--color-dark-grey);
+    color: var(--color-black);
     font-size: 4rem;
     font-weight: 700;
     text-align: center;
@@ -1079,7 +1163,7 @@ body {
 }
 
 .reviews-card h3 {
-    color: var(--color-dark-grey);
+    color: var(--color-black);
     font-size: 4rem;
     font-weight: 700;
     margin-bottom: 1rem;
@@ -1102,7 +1186,7 @@ body {
 }
 
 .reviews-card h4 {
-    color: var(--color-dark-grey);
+    color: var(--color-black);
     font-size: 1.3rem;
     font-weight: 600;
     line-height: 1.6;
@@ -1125,7 +1209,7 @@ body {
 }
 
 .reviews-text h1 {
-    color: var(--color-dark-grey);
+    color: var(--color-black);
     font-size: 4rem;
     font-weight: 700;
     text-align: center;
@@ -1343,7 +1427,7 @@ body {
 
 /* Process Section */
 .process {
-    /* padding: 12rem 8rem; */
+    padding: 12rem 8rem;
 }
 
 .process-title-box {
@@ -1618,67 +1702,7 @@ body {
 /* ******************************************************* MEDIA QUERIES *************************************************************** */
 /* Large devices (laptops/desktops, 106px and down) */
 @media only screen and (max-width: 1024px) {
-    /* About Section */
-    .about h4 {
-        margin-bottom: 4rem;
-    }
-
-    .about-image img {
-        width: 400px;
-    }
-
-    .about-image-2 img {
-        width: 400px;
-    }
-
-    /* Headlight Section */
-    .headlight-box {
-        display: flex;
-        margin: 0 2rem;
-    }
-
-    .headlight h4 {
-        margin-bottom: 4rem;
-    }
-
-    .headlight-item h4 {
-        margin-bottom: 1rem;
-    }
-
-    .headlight-button {
-        margin-top: 2rem;
-    }
-
-    /* Banner Section */
-    .banner-text {
-        flex-basis: 100%;
-    }
-
-    .banner-text h1 {
-        text-align: center;
-    }
-
-    .banner-text p {
-        text-align: center;
-        padding-right: 8rem;
-        padding-left: 8rem;
-    }
-
-    .banner-image {
-        flex-basis: 0%;
-    }
-
-    .banner-item .input {
-        margin-left: 9rem;
-    }
-
-    /* testimonials Section */
-    .testimonials-box {
-        margin: 0 2rem;
-    }
-    .testimonials-card {
-        margin: 0 0rem 2rem 0rem;
-    }
+    
 }
 
 /* Medium devices (landscape tablets, 768px and down) */
@@ -1704,15 +1728,15 @@ body {
     }
 
     .nav {
-        background: var(--color-light-grey);
+        background: var(--color-dark-grey);
     }
 
     .bar__nav-toggle i {
-        color: var(--color-dark-grey);
+        color: var(--color-black);
     }
 
     .nav__link {
-        color: var(--color-dark-grey);
+        color: var(--color-white);
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     }
 
@@ -1720,121 +1744,101 @@ body {
         border-bottom: none;
     }
     
-    .nav .btn-purple {
+    .nav .btn-purple-transparent {
+        background: var(--color-white);
+        color: var(--color-black);
         text-align: center;
         margin-top: 2rem;
     }
 
-    .nav .btn-transparent {
-        text-align: center;
-        margin-top: .5rem;
+    .nav .btn-purple-transparent {
+        background: var(--color-purple);
+        color: var(--color-white);
     }
 
-    /* Logos Section */
-    .logos {
-        height: 42vh;
+    /* Services Section */
+    .services {
+        padding: 12rem 4rem;
     }
 
-    /* Process Section */
-    .process-box {
+    .services-item {
+        margin: 0rem 2rem 6rem 2rem;
+    }
+
+    .services-item:nth-child(7) {
+        margin-bottom: 6rem;
+    }
+
+    .services-item:nth-child(8) {
+        margin-bottom: 6rem;
+    }
+
+    /* Credibility Section */
+    .credibility {
+        padding: 12rem 8rem;
+    }
+
+    .credibility-box {
         flex-direction: column;
     }
 
-    .process-card {
-        margin-bottom: 6rem;
+    .credibility-numbers {
+        flex-wrap: wrap;
+    }
+
+    .credibility-item {
+        border-right: none;
+    }
+
+    .credibility-item:nth-child(1) {
+        margin-bottom: 4rem;
+    }
+
+    .credibility-item:nth-child(2) {
+        margin-bottom: 4rem;
+        margin-right: 4rem;
+    }
+
+    .credibility-item:nth-child(4) {
+        margin-right: 4rem;
+    }
+
+    /* Pricing Section */
+    .pricing-box {
+        display: flex;
         justify-content: center;
         align-items: center;
-        text-align: center;
     }
 
-    .process-card:nth-child(3) {
-        margin-bottom: 0rem;
+    .pricing-card {
+        width: 28rem;
+        height: 123rem;
     }
 
-    /* Packages Section */
-    .packages-card:nth-child(1) {
-        margin-bottom: 6rem;
+    .pricing-card:nth-child(1) {
+        margin-bottom: 2rem;
     }
 
-    .packages-card:nth-child(2) {
-        margin-bottom: 6rem;
+    .pricing-card:nth-child(2) {
+        margin-bottom: 2rem;
     }
 
-    /* Logos 2 Section */
-    .logos-2 {
-        height: 42vh;
+    /* Specials Section */
+    .specials-card:nth-child(2) {
+        margin: 2rem 0;
     }
 
-    /* About Section */
-    .about h4 {
-        margin-bottom: 6rem;
+    /* Reviews Section */
+    .reviews {
+        padding: 12rem 8rem 4rem 8rem;
     }
-
-    .about-image img {
-        width: 500px;
-    }
-
-    .about-image-2 img {
-        width: 520px;
-    }
-
-    .about-box {
-        flex-direction: column-reverse;
-    }
-
-    .about-box .about-text {
-        padding: 6rem 6rem 0 6rem;
-    }
-
-    .about-box-2 {
-        flex-direction: column-reverse;
-        margin: 4rem 4rem 0 4rem;
-    }
-
-    .about-box-2 .about-text {
-        padding: 6rem 6rem 0 6rem;
-    }
-
-    .about-button {
-        padding-bottom: 2rem;
-    }
-
-    /* Headlight Section */
-    .headlight-box {
-        display: flex;
-        margin: 0 2rem;
-    }
-
-    .headlight h4 {
-        margin-bottom: 4rem;
-    }
-
-    .headlight-item h4 {
-        margin-bottom: 1rem;
-    }
-
-    .headlight-item {
-        margin-bottom: 4rem;
-        width: 27rem;
-        height: 12rem;
-    }
-
-    /* Testimonials Section */
-    .testimonials {
-        padding: 8rem 0 2rem 0;
-    }
-
-    .testimonials-box {
+    .reviews-box {
         flex-direction: column;
-        margin: 0 2rem;
-    }
-    .testimonials-card {
-        margin-bottom: 4rem;
     }
 
-    /* Contact Section */
-    .contact-box {
-        width: 70rem;
+    .reviews-card {
+        margin-bottom: 4rem;
+        width: 60rem;
     }
 
     /* Footer Section */
@@ -1864,10 +1868,64 @@ body {
     }
 }
 
+/* Extra small devices (phones, 768px and down) */
+@media only screen and (max-width: 768px) {
+    /* Header Section */
+    .header {
+        height: 70vh;
+    }
+
+    /* Services Section */
+    .services {
+        padding: 12rem 2rem;
+    }
+
+    .services-item {
+        margin: 0rem 2rem 6rem 2rem;
+    }
+
+    .services-item:nth-child(7) {
+        margin-bottom: 6rem;
+    }
+
+    .services-item:nth-child(8) {
+        margin-bottom: 6rem;
+    }
+
+    /* Pricing Section */
+    .pricing-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pricing-card {
+        width: 26rem;
+        height: 129rem;
+    }
+
+    .pricing-card:nth-child(1) {
+        margin-bottom: 2rem;
+    }
+
+    .pricing-card:nth-child(2) {
+        margin-bottom: 2rem;
+    }
+
+    /* Portfolio Section */
+    .portfolio-item img {
+        width: 175px;
+    }
+
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
     /* Header Section */
+    .header {
+        height: 100vh;
+    }
 
     .header-box {
         flex-direction: column;
@@ -1879,158 +1937,119 @@ body {
         margin-bottom: 3rem;
     }
 
-    .header-image img {
-        width: 250px;
+    .header-text h4 {
+        text-align: center;
+    }
+
+    .header-item .input {
+        width: 30rem;
+        font-size: 1.15rem;
+    }
+
+    .header-item .btn-submit {
+        width: 12rem;
+        font-size: 1.15rem;
+    }
+
+    /* Services Section */
+    .services {
+        padding: 8rem 2rem;
+    }
+
+    /* Crediblity Section */
+    .credibility {
+        padding: 8rem 2rem;
+    }
+
+    .credibility-header {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .credibility-text {
+        padding-right: 0rem;
+        text-align: center;
+    }
+
+    .credibility-numbers {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .credibility-item {
+        padding-right: 0rem;
+    }
+
+    .credibility-item:nth-child(1) {
+        margin-right: 0rem;
+        padding: 0 2rem;
+    }
+
+    .credibility-item:nth-child(2) {
+        margin-right: 0rem;
+    }
+
+    .credibility-item:nth-child(3) {
+        margin-right: 0rem;
+    }
+
+    .credibility-item:nth-child(4) {
+        margin-right: 0rem;
+    }
+
+    /* Pricing Section */
+    .pricing {
+        padding: 8rem 2rem;
+    }
+
+    .pricing-card {
         height: auto;
-        margin-bottom: 8rem;
     }
 
-    .nav__link {
-        color: var(--color-white);
-    }
-
-    .header-button {
-        margin-bottom: -2rem;
-    }
-
-    .nav {
-        background: var(--color-dark-grey);
-    }
-    
-    .nav .btn-primary {
-        text-align: center;
-        margin-top: 2rem;
-    }
-
-    /* About Section */
-    .about {
-        padding: 8rem 0 4rem 0;
-    }
-
-    .about .container {
-        margin: 0 0;
-    }
-
-    .about h4 {
-       margin: 0 2rem 3rem 2rem;
-    }
-
-    .about h2 {
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
-
-    .about-box {
-        flex-direction: column-reverse;
-        margin: 0 2rem;
-    }
-
-    .about-text h2 {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .about-box-2 {
-        flex-direction: column-reverse;
-        margin: 0 2rem;
-    }
-
-    .about-box .about-text {
-        padding: 0 2rem 0 2rem;
-    }
-
-    .about-box-2 .about-text {
-        padding: 0 2rem 0 2rem;
-    }
-
-    .about-image img {
-        width: 300px;
-        margin-bottom: 4rem;
-    }
-
-    .about-image-2 img {
-        width: 300px;
-        margin-bottom: 4rem;
-        margin-top: 2rem;
-    }
-
-    .about-button {
-        padding-bottom: 4rem;
-    }
-
-    /* Banner Section */
-    .banner {
-        padding: 6rem 0;
-    }
-
-    .banner-box h1 {
-        margin: 0 2rem 2rem 2rem;
-        text-align: center;
-        font-size: 4rem;
-    }
-
-    .banner-box p {
-        padding: 0 0;
-        margin: 0 2rem 2rem 2rem;
-        text-align: center;
-    }
-
-    .banner-item .input {
-        margin-left: 2.1rem;
-    }
-
-    /* Headlight Section */
-    .headlight-box {
-        margin: 0 0rem;
-    }
-
-    /* .headlight h2 {
-        font-size: 4rem;
-    } */
-
-    .headlight h4 {
-        margin-bottom: 3rem;
-    }
-
-    .headlight-item h4 {
-        margin-bottom: 1rem;
-    }
-
-    .headlight-item {
+    .pricing-card:nth-child(3) {
         margin-bottom: 2rem;
     }
 
-    /* Testimonials Section */
-    .testimonials {
-        padding: 8rem 0 0rem 0;
+    .pricing-card:nth-child(4) {
+        margin-bottom: 0rem;
     }
 
-    .testimonials-card {
-         margin-bottom: 4rem;
-     }
-
-    /* Branding Section */
-    .branding {
-        padding: 14rem 0 8rem 0;
+    /* Specials Section */
+    .specials {
+        padding: 8rem 2rem 12rem 2rem;
     }
 
-    /* Contact Section */
-    .contact-box {
-        flex-direction: column;
+    /* Portfolio Section */
+    .portfolio {
+        padding: 8rem 2rem;
+    }
+
+    .portfolio-box {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .portfolio-item {
+        margin-right: 0rem;
+    }
+
+    .portfolio-item:nth-child(4) {
+        margin-bottom: 0rem;
+        margin-top: 2rem;
+    }
+
+    /* Reviews Section */
+    .reviews {
+        padding: 10rem 2rem 4rem 2rem;
+    }
+
+    .reviews-card {
         width: 32rem;
-        margin-bottom: 6rem;
     }
 
-    .contact-box p {
-        margin-bottom: 3rem;
-    }
-
-    .contact-box1-item .input {
-        width: 26rem;
-    }
-
-    .contact-box3-item textarea {
-        width: 26rem;
+    .reviews-item .input {
+        width: 32rem;
     }
 
     /* Footer Section */
