@@ -78,7 +78,7 @@ body {
     justify-content: center;
     padding-top: var(--bar-height);
     box-sizing: border-box;
-    background-size: cover;
+    background-size: 1920px cover;
     z-index: 4;
     position: relative;
     /* border-bottom: 1px solid lightgray; */
@@ -557,6 +557,22 @@ body {
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
     border-radius: 16px;
     margin: 0 1rem;
+    transition: .3s ease-in-out all;
+}
+
+.pricing-card:hover {
+    transform: scale(1.1);
+}
+
+.pricing-card:nth-child(3) {
+    /* border-top-left-radius: 0px;
+    border-top-right-radius: 0px; */
+    /* border-right: 4px solid var(--color-purple);
+    border-left: 4px solid var(--color-purple);
+    border-bottom: 4px solid var(--color-purple); */
+    /* border-top: 5px solid var(--color-purple); */
+    background-color: #e0d9ec;
+    /* box-shadow: 0 2rem 2rem rgba(100, 64, 159, .5); */
 }
 
 /* .pricing-card:nth-child(1) {
@@ -577,6 +593,10 @@ body {
     padding: 1rem 0;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
+}
+
+.pricing-title:nth-child(3) {
+    background-color: var(--color-black);
 }
 
 .pricing-title h3 {
@@ -639,6 +659,19 @@ body {
     align-items: flex-end;
 }
 
+.pricing-info h5 span {
+    color: var(--color-white);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.6;
+    font-weight: 700;
+    margin-bottom: 0rem;
+}
+
+#whiteText {
+    color: white;
+}
+
 /* Credibility Section */
 .credibility {
     background: url(../img/new-york-g854177f93_1920.jpg);
@@ -651,7 +684,7 @@ body {
     z-index: 4;
     position: relative;
     background-attachment: fixed;
-    background-position: center;
+    background-position: 1920px center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -944,7 +977,7 @@ body {
 .specials-box {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     margin-top: 6rem;
 }
@@ -954,7 +987,7 @@ body {
     width: 40rem;
     height: auto;
     padding: 3rem 4rem;
-    border-radius: 8px;
+    border-radius: 40px;
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
     border-top: 5px solid var(--color-purple);
     display: flex;
