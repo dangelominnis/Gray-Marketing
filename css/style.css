@@ -544,8 +544,9 @@ body {
 .pricing-card {
     display: flex;
     flex-direction: column;
+    /* justify-content: flex-end; */
     width: 30rem;
-    height: auto;
+    height: 115rem;
     background-color: var(--color-white);
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
     border-radius: 16px;
@@ -624,8 +625,11 @@ body {
 }
 
 .pricing-button {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 0rem;
+    margin-bottom: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 /* Credibility Section */
